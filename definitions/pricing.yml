@@ -2,7 +2,7 @@ openapi: 3.0.0
 servers:
   - url: "https://rest.nexmo.com/account"
 info:
-  version: "0.0.2"
+  version: "0.0.3"
   title: Pricing API
   description: >-
     The API to retrieve pricing information.
