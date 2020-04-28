@@ -55,8 +55,6 @@ paths:
         Retrieves the pricing information for all countries.
       tags:
         - Pricing
-      security:
-        - basicAuth: []
       parameters:
         - $ref: "#/components/parameters/type"
         - $ref: "#/components/parameters/api_key"
@@ -85,8 +83,6 @@ paths:
         Retrieves the pricing information based on the dialing prefix.
       tags:
         - Pricing
-      security:
-        - basicAuth: []
       parameters:
         - $ref: "#/components/parameters/type"
         - $ref: "#/components/parameters/api_key"
@@ -113,10 +109,6 @@ paths:
         "429":
           $ref: "#/components/responses/TooManyRequestsError"
 components:
-  securitySchemes:
-    basicAuth:
-      type: http
-      scheme: basic
   responses:
     UnauthorizedError:
       description: You did not provide valid credentials
