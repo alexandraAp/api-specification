@@ -22,8 +22,6 @@ paths:
         Retrieves the pricing information based on the specified country.
       tags:
         - Pricing
-      security:
-        - basicAuth: []
       parameters:
         - $ref: "#/components/parameters/type"
         - $ref: "#/components/parameters/api_key"
